@@ -4,7 +4,7 @@ import styles from "./style.scss";
 export default props => {
   return (
     <div className={styles.root}>
-      <p>A test question!!</p>
+      <h2>A test question!!</h2>
       <button
         onClick={() => {
           props.onComplete({ data: 1 });

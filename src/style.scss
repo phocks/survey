@@ -1,4 +1,25 @@
 .root {
+  font-family:"ABCSans",Helvetica,Arial,sans-serif;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  button {
+    display: inline-block;
+    text-align: center;
+    margin-right: 1.2em;
+    margin-bottom: 1em;
+    user-select: none;
+    border: 2px solid #c7c7c7;
+    border-radius: 0;
+    font-size: 1.7em;
+    color: #000;
+    background: #fee7e9;
+    padding: 0.7em 1em;
+    cursor: pointer;
+  }
+
   p {
     font-size: 1.125rem;
     line-height: 1.666666667;
