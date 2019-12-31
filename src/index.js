@@ -1,10 +1,30 @@
 import React from "react";
+import { useInputChange } from './useInputChange'
+
 import styles from "./style.scss";
 
 export default props => {
+  const [input, handleInputChange] = useInputChange();
+
+  const handleSubmit = (event) => {
+    console.log("Form submitted...")
+    event.preventDefault();
+  }
+
   return (
     <div className={styles.root}>
-      <h2>A test question!!</h2>
+      <form onSubmit={handleSubmit}>
+       <div>
+        <label>Username:</label>
+        <input type="radio" name="username" onChange={handleInputChange} />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="radio" name="password" onChange={handleInputChange} />
+      </div>
+      <input type="submit" />
+    </form>
+      {/* <h2>A test question!!</h2>
       <button
         onClick={() => {
           props.onComplete({ data: 1 });
@@ -18,7 +38,7 @@ export default props => {
         }}
       >
         Choice 2
-      </button>
+      </button> */}
     </div>
   );
 };
