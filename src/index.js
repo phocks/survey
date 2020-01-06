@@ -8,31 +8,17 @@ export default props => {
 
   const handleSubmit = event => {
     console.log("Form submitted...");
-    event.preventDefault();
+    // event.preventDefault();
   };
 
   return (
     <div className={styles.root}>
       <h1>What is your favourite animal?</h1>
       <form onSubmit={handleSubmit}>
-        <div className={styles.radio}>
-          <label for="cat">Cat</label>
-          <input
-            type="radio"
-            name="cat"
-            id="cat"
-            onChange={handleInputChange}
-          />
-        </div>
-        <div className={styles.radio}>
-          <label for="dog">Dog</label>
-          <input
-            type="radio"
-            name="dog"
-            id="dog"
-            onChange={handleInputChange}
-          />
-        </div>
+        <input type="radio" name="animal" id="cat" />
+        <label htmlFor="cat" className={styles.btn}>Cat</label>
+        <input type="radio" name="animal" id="dog" />
+        <label htmlFor="dog" className={styles.btn}>Dog</label>
         {/* <input type="submit" /> */}
       </form>
       {/* <h2>A test question!!</h2>
