@@ -19,9 +19,8 @@
     "rollup": "^1.27.14",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-postcss": "^2.0.3",
-    "styled-jsx": "^3.2.4"
-  },
-  "dependencies": {
+    "styled-jsx": "^3.2.4",
     "rollup-plugin-uglify": "^6.0.4"
-  }
+  },
+  "dependencies": {}
 }
